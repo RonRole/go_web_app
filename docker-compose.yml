@@ -5,3 +5,8 @@ services:
     image: golang
     volumes:
       - ./golang:/golang
+    ports:
+      - "9090:9090"
+    command: go run /golang/hello.go
+     
+    
